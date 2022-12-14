@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>ngo website</title>
+    <script src="https://kit.fontawesome.com/60dc0cd9c7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        #check:checked~ul {
+            right: 0;
+        }
+
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="font-family: 'Roboto', sans-serif; capitalize flex flex-col">
+    <div class="px-10 pb-4 flex flex-col gap-14 bg-teal-300 text-black">
+        <header class="flex justify-between items-center pt-5">
+            <input type="checkbox" name="" id="check" hidden>
+            <label for="check" class="order-5 md:hidden"><i class="fa-sharp fa-solid fa-bars"></i></label>
+
+            <div class="logo ">largerthan</div>
+            <ul
+                class=" flex max-md:z-20 md:space-x-5 max-md:flex-col max-md:fixed md:relative max-md:h-[100%]   max-md:w-[100%] md:w-fit max-md:top-16
+                         md:top-0 max-md:right-[-100%] md:left-0 max-md:transition-all max-md:duration-300 max-md:transition-none text-center bg-teal-300 max-md:bg-black max-md:text-white">
+                <li class="max-md:my-3"><a href="/index.html">home</a></li>
+                <li class="max-md:my-3"><a href="/about.html">about us</a></li>
+                <li class="max-md:my-3"><a href="/what we do.html">What We Do</a></li>
+                <li class="max-md:my-3"><a href="#">media</a></li>
+                <li class="max-md:my-3"><a href="/contact.html">contact</a></li>
+            </ul>
+            <button class="text-white bg-black py-1 px-6 capitalize rounded-md"><a
+                    href="/donation.html">donate</a></button>
+        </header>
+    </div>
+    <div class="bg-[#FCEDC6] px-10 py-12 flex flex-col gap-14">
+        <div class="flex flex-col max-md:gap-6">
+            <div class="flex  md:flex-row max-md:flex-col max-md:gap-6">
+                <div class="left md:w-1/2 flex flex-col gap-10">
+                    <div class="flex items-center gap-3"><span class="w-14 h-1 bg-black"></span>
+                        <p> Top news</p>
+                    </div>
+                    <div class="flex flex-col gap-10 md:ml-14">
+                        <h2 class=" font-bold md:text-[48px] max-sm:text-2xl max-md:text-3xl ">Our goal is to provide
+                            inclusive care for children with special needs
+                        </h2>
+                        <p class="text-[16px]">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut
+                            sem vitae risus tristique posuere.</p>
+                        <button
+                            class="text-black font-bold bg-[#F2C94C] py-2 px-5 capitalize rounded-md w-fit text-[16px]">read
+                            more</button>
+                    </div>
+                </div>
+                <div class="right md:w-1/2 flex justify-end max-md:justify-center ">
+                    <div class="flex gap-4 flex-col bg-white p-[24px] pr-[56px] max-sm:p-2 rounded-[15px]">
+                        <div
+                            class="flex justify-center items-center gap-4 md:justify-start max-sm:flex-col max-sm:justify-start max-sm:items-start">
+                            <div>
+                                <img src="/assets/media austim.png" alt="">
+                            </div>
+                            <div class="flex flex-col max-sm:gap-0 gap-3">
+                                <h5 class="text-[20px] font-bold">Autism care day</h5>
+                                <h6 class="text-[14px] text-[#1D2130] font-semibold">15th Nov 2022</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur<br class="max-sm:hidden"> adipiscing elit.
+                                    Suspendisse varius enim
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex justify-center items-center gap-4 md:justify-start max-sm:flex-col max-sm:justify-start max-sm:items-start">
+                            <div>
+                                <img src="/assets/down syndrome media.svg" alt="">
+                            </div>
+                            <div class="flex flex-col max-sm:gap-0 gap-3">
+                                <h5 class="text-[20px] font-bold">Down syndrome outreach</h5>
+                                <h6 class="text-[14px] text-[#1D2130] font-semibold">15th Nov 2022</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur<br class="max-sm:hidden"> adipiscing elit.
+                                    Suspendisse varius enim
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex justify-center items-center gap-4 md:justify-start max-sm:flex-col max-sm:justify-start max-sm:items-start">
+                            <div>
+                                <img src="/assets/childeren media.svg" alt="">
+                            </div>
+                            <div class="flex flex-col max-sm:gap-0 gap-3">
+                                <h5 class="text-[20px] font-bold">Caring for children with cerebral palsy</h5>
+                                <h6 class="text-[14px] text-[#1D2130] font-semibold">15th Nov 2022</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur<br class="max-sm:hidden"> adipiscing elit.
+                                    Suspendisse varius enim
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mx-10 flex flex-col gap-14 py-10">
+        <div class="flex flex-col relative justify-center">
+            <img src="/assets/unsplash_cVEOh_JJmEE.svg" alt="">
+            <div
+                class="flex flex-col md:absolute text-3xl gap-5  md:text-white md:justify-center md:items-center md:mx-[30%]">
+
+                <h2 class="md:text-center max-md:text-3xl font-bold">You can contribute to provide a place<br
+                        class="max-md:hidden"> for children
+                    with special needs!
+                </h2>
+                <div class="gap-4 flex">
+                    <button class="text-black text-sm bg-[#F2C94C] py-1 px-4 capitalize rounded-sm">Join as a
+                        volunteer</button>
+                    <button
+                        class="text-black text-sm bg-white py-1 px-4 capitalize flex items-center gap-1 max-md:bg-black max-md:text-white">
+                        <a href="/donation.html">Donate</a></button>
+                </div>
+
+            </div>
+        </div>
+        <div class="flex flex-col gap-10">
+            <h3 class="text-[40px] font-semiboldbold">Our Events</h3>
+            <div class="flex  gap-14  max-md:flex-col">
+                <div class="flex gap-5 p-2 bg-[#F2C94C]  justify-center items-center  rounded-lg md:w-1/2">
+                    <div class="flex flex-col  items-center">
+                        <h2 class="text-[48px]">
+                            13
+                        </h2>
+                        <p class="text[16px]">apr</p>
+                    </div>
+                    <div>
+                        <h3 class="text-[16px]">next Events</h3>
+                        <h2 class="md:text-[28px] font-bold max-md:text-2xl">A day with our wonderful<br
+                                class="max-md:hidden"> children</h2>
+                    </div>
+                    <img src="/assets/Arrow button.svg" alt="">
+                </div>
+                <div class="flex gap-5 p-2 bg-[#F2C94C]  justify-center items-center  rounded-lg md:w-1/2">
+                    <div class="flex flex-col  items-center">
+                        <h2 class="text-[48px]">
+                            13
+                        </h2>
+                        <p class="text[16px]">apr</p>
+                    </div>
+                    <div>
+                        <h3 class="text-[16px]">next Events</h3>
+                        <h2 class="md:text-[28px] font-bold max-md:text-2xl">A day with our wonderful<br
+                                class="max-md:hidden"> children
+                        </h2>
+                    </div>
+                    <img src="/assets/Arrow button.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-black text-white p-[50px]">
+        <div class="flex justify-between max-md:flex-col max-md:gap-6">
+            <div class="text-[24px]">largerthan</div>
+            <div class="flex md:space-x-20 max-sm:flex-col">
+                <ul class="flex flex-col gap-4">
+                    <li class="text-[14px] font-bold"><a href="#"> home</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/about.html"> about us </a></li>
+                    <li class="text-[14px] font-semibold"><a href="/event read more.html"> team</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/what we do.html"> what we do</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/contact.html"> contact</a></li>
+                </ul>
+                <ul class="flex flex-col gap-4">
+                    <li class="text-[14px] font-bold"><a href="/event read more.html"> more</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/project read more.html"> project</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/event read more.html"> event</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/donation.html"> Donate</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/event read more.html"> blog</a></li>
+                </ul>
+                <ul class="flex flex-col gap-4">
+                    <li class="text-[14px] font-bold"><a href="#"> connect</a></li>
+                    <li class="text-[14px] font-semibold"><a href="#"> facebook</a></li>
+                    <li class="text-[14px] font-semibold"><a href="#"> instagram</a></li>
+                    <li class="text-[14px] font-semibold"><a href="#"> twiter</a></li>
+                    <li class="text-[14px] font-semibold"><a href="#"> linkdin</a></li>
+                </ul>
+            </div>
+            <div class="md:w-1/3 max-md:gap-6">
+                <h1 class="text-[40px]">Subscribe to get latest<br> updates</h1>
+                <div class="flex max-md:flex-col max-md:w-[70%] max-md:gap-6">
+                    <input type="text" class="border-[#EBF0F9] bg-black border md:w-[70%] p-2" placeholder="email">
+                    <button
+                        class="text-black text-sm bg-white py-1 px-4 capitalize flex items-center max-md:w-32 text-center">
+                        suscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

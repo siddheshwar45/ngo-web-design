@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>ngo website</title>
+    <script src="https://kit.fontawesome.com/60dc0cd9c7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        #check:checked~ul {
+            right: 0;
+        }
+
+        li:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .main-container {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        .form-content {
+            max-width: 600px;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top: 50px;
+            box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .title-small {
+            font-size: 20px;
+        }
+
+        .form-container {
+            margin: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid: 20px;
+        }
+
+        .form-control {
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+        }
+
+        label {
+            font-size: 15px;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 6px 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: end;
+            margin-top: 20px;
+        }
+
+        .textarea-control {
+            grid-column: 1 / span 2;
+        }
+
+        .textarea-control textarea {
+            width: 100%;
+            /* height: 7vh; */
+        }
+    </style>
+</head>
+
+<body class="font-family: 'Roboto', sans-serif; capitalize flex flex-col">
+    <div class="px-10 pb-5 bg-teal-300  flex flex-col gap-14">
+        <header class="flex justify-between items-center pt-5">
+            <input type="checkbox" name="" id="check" hidden>
+            <label for="check" class="order-5 md:hidden"><i class="fa-sharp fa-solid fa-bars"></i></label>
+
+            <div class="logo ">largerthan</div>
+            <ul
+                class="flex max-md:z-20 md:space-x-5 max-md:flex-col max-md:fixed md:relative max-md:h-[100%]   max-md:w-[100%] md:w-fit max-md:top-16
+                         md:top-0 max-md:right-[-100%] md:left-0 max-md:transition-all max-md:duration-300 max-md:transition-none text-center bg-teal-300 max-md:bg-black max-md:text-white">
+                <li class="max-md:my-3"><a href="/index.html">home</a></li>
+                <li class="max-md:my-3"><a href="#">about us</a></li>
+                <li class="max-md:my-3"><a href="/what we do.html">What We Do</a></li>
+                <li class="max-md:my-3"><a href="/media.html">media</a></li>
+                <li class="max-md:my-3"><a href="/contact.html">contact</a></li>
+            </ul>
+            <button class="text-white bg-black py-1 px-6 capitalize rounded-md"><a
+                    href="/donation.html">donate</a></button>
+        </header>
+    </div>
+    <div class="bg-[#FCEDC6] px-10 py-12 flex flex-col gap-14">
+        <div class="flex flex-col max-md:gap-6">
+            <div class="flex  md:flex-row max-md:flex-col max-md:gap-6">
+                <div class="left md:w-1/2 flex flex-col gap-[16px]">
+                    <div class="flex items-center gap-3"><span class="w-14 h-1 bg-black"></span>
+                        <p>Contact us</p>
+                    </div>
+                    <div class="flex flex-col gap-[16px] md:ml-14">
+                        <h2 class=" font-bold md:text-[48px] max-sm:text-2xl max-md:text-3xl text-[56px] ">We'd love to
+                            hear<br> from
+                            you
+                        </h2>
+                        <p class="text-[16px]">Have any question in mind or want to enquire? Please feel free to<br>
+                            contact
+                            us through the form or the following details.</p>
+
+                    </div>
+                </div>
+                <div class="right md:w-1/2 flex flex-col gap-10 ">
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-[24px] font-semibold">Let's talk!</h2>
+                        <span class="flex gap-3">+234 09012346514<p>hello@largerthani.com</p></span>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-[24px] font-semibold">Headoffice</h2>
+                        <p>8 Brewery Drive, Lagos,<br>
+                            Nigeria.</p>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <h2 class="text-[24px] font-semibold">Branch Office</h2>
+                        <p>Opp Opolo round about, Yenagoa, Bayelsa,<br>
+                            Nigeria</p>
+                    </div>
+                    <div><img src="/about assets/Social row.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="form-content">
+            <h1>job application
+                <span class="title-small"><a href="#">web</a></span>
+            </h1>
+            <form action="">
+                <div class="form-container">
+                    <div class="form-control">
+                        <label for="first-name">first name</label>
+                        <input id="first-name" name="first-name" placeholder="enter name">
+                    </div>
+                    <div class="form-control">
+                        <label for="last-name">last name</label>
+                        <input id="last-name" name="last-name" placeholder="enter name">
+                    </div>
+                    <div class="form-control">
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email" placeholder="enter email...">
+                    </div>
+                    <div class="form-control">
+                        <label for="subject">subject</label>
+                        <input id="subject" name="subject" placeholder="enter subject">
+                    </div>
+
+                    <div class="textarea-control">
+                        <label for="address">message</label>
+                        <textarea id="address" name="address" rows="5" cols="10"></textarea>
+                    </div>
+                    <button class="text-white  bg-[#F2C94C] py-1 px-5 capitalize rounded-md items-center"><a
+                            href="/donation.html">send message</a></button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div>
+        <img src="/assets/Map.svg" alt="">
+    </div>
+    <footer class="bg-black text-white p-[50px]">
+        <div class="flex justify-between max-md:flex-col max-md:gap-6">
+            <div class="text-[24px]">largerthan</div>
+            <div class="flex md:space-x-20 max-sm:flex-col max-md:gap-10">
+                <ul class="flex flex-col gap-4">
+                    <li class="text-[14px] font-bold"><a href="#"> home</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/about.html"> about us </a></li>
+                    <li class="text-[14px] font-semibold"><a href="/event read more.html"> team</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/what we do.html"> what we do</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/contact.html"> contact</a></li>
+                </ul>
+                <ul class="flex flex-col gap-4">
+                    <li class="text-[14px] font-bold"><a href="/event read more.html"> more</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/project read more.html"> project</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/event read more.html"> event</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/donation.html"> Donate</a></li>
+                    <li class="text-[14px] font-semibold"><a href="/event read more.html"> blog</a></li>
+                </ul>
+                <ul class="flex flex-col gap-4">
+                    <li class="text-[14px] font-bold"><a href="#"> connect</a></li>
+                    <li class="text-[14px] font-semibold"><a href="#"> facebook</a></li>
+                    <li class="text-[14px] font-semibold"><a href="#"> instagram</a></li>
+                    <li class="text-[14px] font-semibold"><a href="#"> twiter</a></li>
+                    <li class="text-[14px] font-semibold"><a href="#"> linkdin</a></li>
+                </ul>
+            </div>
+            <div class="md:w-1/3 max-md:gap-6">
+                <h1 class="text-[40px]">Subscribe to get latest<br> updates</h1>
+                <div class="flex max-md:flex-col max-md:w-[70%] max-md:gap-6">
+                    <input type="text" class="border-[#EBF0F9] bg-black border md:w-[70%] p-2" placeholder="email">
+                    <button
+                        class="text-black text-sm bg-white py-1 px-4 capitalize flex items-center max-md:w-32 text-center">
+                        suscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
